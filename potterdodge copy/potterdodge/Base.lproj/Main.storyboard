@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="potterdodge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="maK-i9-Uhn"/>
+                        <viewControllerLayoutGuide type="bottom" id="khH-OB-KpY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgU-Ba-ant">
+                                <rect key="frame" x="311" y="30" width="43" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wZr-q5-GdC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CjC-2N-9Ud" kind="popoverPresentation" popoverAnchorView="YgU-Ba-ant" id="Zsk-xq-rPR">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="YgU-Ba-ant" secondAttribute="trailing" constant="5" id="NKm-fS-Vcd"/>
+                            <constraint firstItem="YgU-Ba-ant" firstAttribute="top" secondItem="maK-i9-Uhn" secondAttribute="bottom" constant="10" id="iRo-Yl-IpH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="970-ne-FdD">
+            <objects>
+                <viewController id="CjC-2N-9Ud" customClass="PlayerViewController" customModule="potterdodge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wcp-n9-IZj"/>
+                        <viewControllerLayoutGuide type="bottom" id="PHL-rE-M7Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J3g-Ta-3Uc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DcK-9S-Jra" userLabel="vertical stack view">
+                                <rect key="frame" x="30" y="120" width="315" height="300"/>
+                                <subviews>
+                                    <stackView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEz-0W-SzV" userLabel="harry">
+                                        <rect key="frame" x="22.5" y="0.0" width="270.5" height="83.5"/>
+                                        <subviews>
+                                            <stackView contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-Vt-vfg">
+                                                <rect key="frame" x="0.0" y="0.0" width="270.5" height="83.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6Z-i5-SOq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="83.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="rz2-Qa-FjM"/>
+                                                        </constraints>
+                                                        <state key="normal" image="potter"/>
+                                                        <connections>
+                                                            <action selector="harryButton:" destination="CjC-2N-9Ud" eventType="touchUpInside" id="Pvu-m3-gyo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzK-Pd-EO2">
+                                                        <rect key="frame" x="220" y="0.0" width="50.5" height="83.5"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3x-Yh-3kK" userLabel="malfoy">
+                                        <rect key="frame" x="19.5" y="108.5" width="276" height="83"/>
+                                        <subviews>
+                                            <stackView contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2iG-Ab-2zd">
+                                                <rect key="frame" x="0.0" y="0.0" width="276" height="83"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooj-wf-KWX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="xdk-h8-Sgg"/>
+                                                        </constraints>
+                                                        <state key="normal" image="malfoy"/>
+                                                        <connections>
+                                                            <action selector="malfoyButton:" destination="CjC-2N-9Ud" eventType="touchUpInside" id="oVB-hK-5QI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Malfoy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hv-nh-XWf">
+                                                        <rect key="frame" x="220" y="0.0" width="56" height="83"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eu-Mm-uV2" userLabel="ron">
+                                        <rect key="frame" x="20.5" y="216.5" width="274.5" height="83.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N2t-Pk-eW7">
+                                                <rect key="frame" x="0.0" y="0.0" width="274.5" height="83.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auz-Fc-uZ3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="83.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="Oqr-A8-vLZ"/>
+                                                        </constraints>
+                                                        <state key="normal" image="ron"/>
+                                                        <connections>
+                                                            <action selector="ronButton:" destination="CjC-2N-9Ud" eventType="touchUpInside" id="5rt-8N-E4z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Ron   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7m-MD-GbJ">
+                                                        <rect key="frame" x="220" y="0.0" width="54.5" height="83.5"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="nnj-VC-JjZ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBX-Xc-xQp">
+                                <rect key="frame" x="66" y="470" width="243" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.99911445167848822" blue="0.60125279876773541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="  Select player  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="CjC-2N-9Ud" eventType="touchUpInside" id="lwY-8R-eLL"/>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" id="kSg-Ha-JHQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DcK-9S-Jra" firstAttribute="top" secondItem="Wcp-n9-IZj" secondAttribute="bottom" constant="100" id="BVW-L1-89J"/>
+                            <constraint firstItem="hBX-Xc-xQp" firstAttribute="top" secondItem="DcK-9S-Jra" secondAttribute="bottom" constant="50" id="FXR-r2-TNV"/>
+                            <constraint firstItem="DcK-9S-Jra" firstAttribute="leading" secondItem="J3g-Ta-3Uc" secondAttribute="leading" constant="30" id="dd2-SI-Il9"/>
+                            <constraint firstAttribute="trailing" secondItem="DcK-9S-Jra" secondAttribute="trailing" constant="30" id="iQZ-hX-7NO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hBX-Xc-xQp" secondAttribute="trailing" constant="50" id="tZy-Lb-uzd"/>
+                            <constraint firstItem="hBX-Xc-xQp" firstAttribute="leading" secondItem="J3g-Ta-3Uc" secondAttribute="leadingMargin" constant="50" id="wVm-Pq-mUs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="harryLabel" destination="IzK-Pd-EO2" id="mQN-24-n47"/>
+                        <outlet property="malfoyLabel" destination="4Hv-nh-XWf" id="1ec-QE-dhp"/>
+                        <outlet property="ronLabel" destination="w7m-MD-GbJ" id="gVm-G7-cOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwr-c1-G3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="malfoy" width="840" height="391"/>
+        <image name="potter" width="840" height="391"/>
+        <image name="ron" width="840" height="391"/>
+    </resources>
+</document>

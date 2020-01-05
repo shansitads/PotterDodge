@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2613EDEF23B65B8F003C02E3 /* thunderbolt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2613EDEE23B65B8F003C02E3 /* thunderbolt.wav */; };
+		265B025023B73ED8001AAB62 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B024F23B73ED8001AAB62 /* PlayerViewController.swift */; };
+		2689CEBB23AFEF6C00109DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689CEBA23AFEF6C00109DE7 /* AppDelegate.swift */; };
+		2689CEBD23AFEF6C00109DE7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2689CEBC23AFEF6C00109DE7 /* GameScene.sks */; };
+		2689CEBF23AFEF6C00109DE7 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2689CEBE23AFEF6C00109DE7 /* Actions.sks */; };
+		2689CEC123AFEF6C00109DE7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689CEC023AFEF6C00109DE7 /* GameScene.swift */; };
+		2689CEC323AFEF6C00109DE7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689CEC223AFEF6C00109DE7 /* GameViewController.swift */; };
+		2689CEC623AFEF6C00109DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2689CEC423AFEF6C00109DE7 /* Main.storyboard */; };
+		2689CECB23AFEF6D00109DE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2689CEC923AFEF6D00109DE7 /* LaunchScreen.storyboard */; };
+		2689CED623AFEF6E00109DE7 /* potterdodgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689CED523AFEF6E00109DE7 /* potterdodgeTests.swift */; };
+		2689CEE123AFEF6E00109DE7 /* potterdodgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689CEE023AFEF6E00109DE7 /* potterdodgeUITests.swift */; };
+		2689CEF023AFF14900109DE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2689CEEE23AFF14800109DE7 /* Images.xcassets */; };
+		2689CEF723B4EE2900109DE7 /* thunder-ongoing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2689CEF623B4EE2900109DE7 /* thunder-ongoing.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2689CED223AFEF6E00109DE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2689CEAF23AFEF6C00109DE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2689CEB623AFEF6C00109DE7;
+			remoteInfo = potterdodge;
+		};
+		2689CEDD23AFEF6E00109DE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2689CEAF23AFEF6C00109DE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2689CEB623AFEF6C00109DE7;
+			remoteInfo = potterdodge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2613EDEE23B65B8F003C02E3 /* thunderbolt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = thunderbolt.wav; path = audio/thunderbolt.wav; sourceTree = "<group>"; };
+		265B024F23B73ED8001AAB62 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		2689CEB723AFEF6C00109DE7 /* potterdodge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = potterdodge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2689CEBA23AFEF6C00109DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2689CEBC23AFEF6C00109DE7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		2689CEBE23AFEF6C00109DE7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		2689CEC023AFEF6C00109DE7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2689CEC223AFEF6C00109DE7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2689CEC523AFEF6C00109DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2689CECA23AFEF6D00109DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2689CECC23AFEF6D00109DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2689CED123AFEF6E00109DE7 /* potterdodgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = potterdodgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2689CED523AFEF6E00109DE7 /* potterdodgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = potterdodgeTests.swift; sourceTree = "<group>"; };
+		2689CED723AFEF6E00109DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2689CEDC23AFEF6E00109DE7 /* potterdodgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = potterdodgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2689CEE023AFEF6E00109DE7 /* potterdodgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = potterdodgeUITests.swift; sourceTree = "<group>"; };
+		2689CEE223AFEF6E00109DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2689CEEE23AFF14800109DE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2689CEF623B4EE2900109DE7 /* thunder-ongoing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "thunder-ongoing.wav"; path = "audio/thunder-ongoing.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2689CEB423AFEF6C00109DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2689CECE23AFEF6E00109DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2689CED923AFEF6E00109DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2689CEAE23AFEF6C00109DE7 = {
+			isa = PBXGroup;
+			children = (
+				2689CEB923AFEF6C00109DE7 /* potterdodge */,
+				2689CED423AFEF6E00109DE7 /* potterdodgeTests */,
+				2689CEDF23AFEF6E00109DE7 /* potterdodgeUITests */,
+				2689CEB823AFEF6C00109DE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2689CEB823AFEF6C00109DE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2689CEB723AFEF6C00109DE7 /* potterdodge.app */,
+				2689CED123AFEF6E00109DE7 /* potterdodgeTests.xctest */,
+				2689CEDC23AFEF6E00109DE7 /* potterdodgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2689CEB923AFEF6C00109DE7 /* potterdodge */ = {
+			isa = PBXGroup;
+			children = (
+				2689CEF623B4EE2900109DE7 /* thunder-ongoing.wav */,
+				2613EDEE23B65B8F003C02E3 /* thunderbolt.wav */,
+				2689CEEE23AFF14800109DE7 /* Images.xcassets */,
+				2689CEBA23AFEF6C00109DE7 /* AppDelegate.swift */,
+				2689CEBC23AFEF6C00109DE7 /* GameScene.sks */,
+				2689CEBE23AFEF6C00109DE7 /* Actions.sks */,
+				2689CEC023AFEF6C00109DE7 /* GameScene.swift */,
+				2689CEC223AFEF6C00109DE7 /* GameViewController.swift */,
+				265B024F23B73ED8001AAB62 /* PlayerViewController.swift */,
+				2689CEC423AFEF6C00109DE7 /* Main.storyboard */,
+				2689CEC923AFEF6D00109DE7 /* LaunchScreen.storyboard */,
+				2689CECC23AFEF6D00109DE7 /* Info.plist */,
+			);
+			path = potterdodge;
+			sourceTree = "<group>";
+		};
+		2689CED423AFEF6E00109DE7 /* potterdodgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2689CED523AFEF6E00109DE7 /* potterdodgeTests.swift */,
+				2689CED723AFEF6E00109DE7 /* Info.plist */,
+			);
+			path = potterdodgeTests;
+			sourceTree = "<group>";
+		};
+		2689CEDF23AFEF6E00109DE7 /* potterdodgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2689CEE023AFEF6E00109DE7 /* potterdodgeUITests.swift */,
+				2689CEE223AFEF6E00109DE7 /* Info.plist */,
+			);
+			path = potterdodgeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2689CEB623AFEF6C00109DE7 /* potterdodge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2689CEE523AFEF6E00109DE7 /* Build configuration list for PBXNativeTarget "potterdodge" */;
+			buildPhases = (
+				2689CEB323AFEF6C00109DE7 /* Sources */,
+				2689CEB423AFEF6C00109DE7 /* Frameworks */,
+				2689CEB523AFEF6C00109DE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = potterdodge;
+			productName = potterdodge;
+			productReference = 2689CEB723AFEF6C00109DE7 /* potterdodge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2689CED023AFEF6E00109DE7 /* potterdodgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2689CEE823AFEF6E00109DE7 /* Build configuration list for PBXNativeTarget "potterdodgeTests" */;
+			buildPhases = (
+				2689CECD23AFEF6E00109DE7 /* Sources */,
+				2689CECE23AFEF6E00109DE7 /* Frameworks */,
+				2689CECF23AFEF6E00109DE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2689CED323AFEF6E00109DE7 /* PBXTargetDependency */,
+			);
+			name = potterdodgeTests;
+			productName = potterdodgeTests;
+			productReference = 2689CED123AFEF6E00109DE7 /* potterdodgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2689CEDB23AFEF6E00109DE7 /* potterdodgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2689CEEB23AFEF6E00109DE7 /* Build configuration list for PBXNativeTarget "potterdodgeUITests" */;
+			buildPhases = (
+				2689CED823AFEF6E00109DE7 /* Sources */,
+				2689CED923AFEF6E00109DE7 /* Frameworks */,
+				2689CEDA23AFEF6E00109DE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2689CEDE23AFEF6E00109DE7 /* PBXTargetDependency */,
+			);
+			name = potterdodgeUITests;
+			productName = potterdodgeUITests;
+			productReference = 2689CEDC23AFEF6E00109DE7 /* potterdodgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2689CEAF23AFEF6C00109DE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Shansita Das Sharma";
+				TargetAttributes = {
+					2689CEB623AFEF6C00109DE7 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					2689CED023AFEF6E00109DE7 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2689CEB623AFEF6C00109DE7;
+					};
+					2689CEDB23AFEF6E00109DE7 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2689CEB623AFEF6C00109DE7;
+					};
+				};
+			};
+			buildConfigurationList = 2689CEB223AFEF6C00109DE7 /* Build configuration list for PBXProject "potterdodge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2689CEAE23AFEF6C00109DE7;
+			productRefGroup = 2689CEB823AFEF6C00109DE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2689CEB623AFEF6C00109DE7 /* potterdodge */,
+				2689CED023AFEF6E00109DE7 /* potterdodgeTests */,
+				2689CEDB23AFEF6E00109DE7 /* potterdodgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2689CEB523AFEF6C00109DE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2689CEC623AFEF6C00109DE7 /* Main.storyboard in Resources */,
+				2689CEBD23AFEF6C00109DE7 /* GameScene.sks in Resources */,
+				2689CEF723B4EE2900109DE7 /* thunder-ongoing.wav in Resources */,
+				2689CEF023AFF14900109DE7 /* Images.xcassets in Resources */,
+				2689CECB23AFEF6D00109DE7 /* LaunchScreen.storyboard in Resources */,
+				2613EDEF23B65B8F003C02E3 /* thunderbolt.wav in Resources */,
+				2689CEBF23AFEF6C00109DE7 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2689CECF23AFEF6E00109DE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2689CEDA23AFEF6E00109DE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2689CEB323AFEF6C00109DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2689CEC123AFEF6C00109DE7 /* GameScene.swift in Sources */,
+				265B025023B73ED8001AAB62 /* PlayerViewController.swift in Sources */,
+				2689CEC323AFEF6C00109DE7 /* GameViewController.swift in Sources */,
+				2689CEBB23AFEF6C00109DE7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2689CECD23AFEF6E00109DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2689CED623AFEF6E00109DE7 /* potterdodgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2689CED823AFEF6E00109DE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2689CEE123AFEF6E00109DE7 /* potterdodgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2689CED323AFEF6E00109DE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2689CEB623AFEF6C00109DE7 /* potterdodge */;
+			targetProxy = 2689CED223AFEF6E00109DE7 /* PBXContainerItemProxy */;
+		};
+		2689CEDE23AFEF6E00109DE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2689CEB623AFEF6C00109DE7 /* potterdodge */;
+			targetProxy = 2689CEDD23AFEF6E00109DE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2689CEC423AFEF6C00109DE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2689CEC523AFEF6C00109DE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2689CEC923AFEF6D00109DE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2689CECA23AFEF6D00109DE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2689CEE323AFEF6E00109DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2689CEE423AFEF6E00109DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2689CEE623AFEF6E00109DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5X74A2TVU4;
+				INFOPLIST_FILE = potterdodge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shansitadassharma.potterdodge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2689CEE723AFEF6E00109DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5X74A2TVU4;
+				INFOPLIST_FILE = potterdodge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shansitadassharma.potterdodge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2689CEE923AFEF6E00109DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWBJ44YCDN;
+				INFOPLIST_FILE = potterdodgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shansita-Das-Sharma.potterdodgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/potterdodge.app/potterdodge";
+			};
+			name = Debug;
+		};
+		2689CEEA23AFEF6E00109DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWBJ44YCDN;
+				INFOPLIST_FILE = potterdodgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shansita-Das-Sharma.potterdodgeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/potterdodge.app/potterdodge";
+			};
+			name = Release;
+		};
+		2689CEEC23AFEF6E00109DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWBJ44YCDN;
+				INFOPLIST_FILE = potterdodgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shansita-Das-Sharma.potterdodgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = potterdodge;
+			};
+			name = Debug;
+		};
+		2689CEED23AFEF6E00109DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWBJ44YCDN;
+				INFOPLIST_FILE = potterdodgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Shansita-Das-Sharma.potterdodgeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = potterdodge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2689CEB223AFEF6C00109DE7 /* Build configuration list for PBXProject "potterdodge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2689CEE323AFEF6E00109DE7 /* Debug */,
+				2689CEE423AFEF6E00109DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2689CEE523AFEF6E00109DE7 /* Build configuration list for PBXNativeTarget "potterdodge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2689CEE623AFEF6E00109DE7 /* Debug */,
+				2689CEE723AFEF6E00109DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2689CEE823AFEF6E00109DE7 /* Build configuration list for PBXNativeTarget "potterdodgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2689CEE923AFEF6E00109DE7 /* Debug */,
+				2689CEEA23AFEF6E00109DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2689CEEB23AFEF6E00109DE7 /* Build configuration list for PBXNativeTarget "potterdodgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2689CEEC23AFEF6E00109DE7 /* Debug */,
+				2689CEED23AFEF6E00109DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2689CEAF23AFEF6C00109DE7 /* Project object */;
+}
